@@ -4,6 +4,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import movixThumbnail from "../assets/img/movix_TN.jpeg";
+import bankThumbnail from "../assets/img/bank_TN.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -18,9 +19,10 @@ export const Projects = () => {
       url : 'https://movie-raiting-app.vercel.app/'
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "HOO BANK",
+      description: "The next generation payment application.",
+      imgUrl: bankThumbnail,
+      url : "https://bank-app-hoo.vercel.app/"
     },
     {
       title: "Business Startup",
