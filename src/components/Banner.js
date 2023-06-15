@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Web Developer","Mobile App Developer", "Web Designer"  ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Sumair`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Sumair`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer","Mobile App Developer", "Web Designer"  ]'><span className="wrap">{text}</span></span></h1>
                   <p>
 I am a skilled web developer and designer, combining technical expertise with creative flair. With a focus on user-centric design and cutting-edge technologies, I bring ideas to life through seamless functionality and visually captivating interfaces. My portfolio reflects my commitment to excellence, collaborative approach, and a passion for pushing boundaries in the digital landscape.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
