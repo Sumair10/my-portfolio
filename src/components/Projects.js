@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import movixThumbnail from "../assets/img/movix_TN.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,9 +12,10 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "MOVIX",
+      description: "A user-friendly movie app frontend that enables quick and easy search and playback of movie trailers.",
+      imgUrl: movixThumbnail,
+      url : 'https://movie-raiting-app.vercel.app/'
     },
     {
       title: "Business Startup",
