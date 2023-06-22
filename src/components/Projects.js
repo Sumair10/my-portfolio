@@ -34,8 +34,8 @@ export const Projects = () => {
       url : "https://charts-analytics-app.vercel.app/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "REAL STATE",
+      description: "Discover your dream home with the ultimate real estate app.",
       imgUrl: realstate,
       url : "https://real-estate-web.pages.dev/"
     },
