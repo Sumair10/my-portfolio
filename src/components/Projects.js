@@ -4,12 +4,15 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import movixThumbnail from "../assets/img/movix_TN.jpeg";
-import bankThumbnail from "../assets/img/bank_TN.png";
+import bankThumbnail from "../assets/img/bank_TNN.png";
+import graph from "../assets/img/graph.png";
+import realstate from "../assets/img/realstate.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
+
 
   const projects = [
     {
@@ -25,14 +28,16 @@ export const Projects = () => {
       url : "https://bank-app-hoo.vercel.app/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "CHART ANALYTICS APP",
+      description: "Visualize and analyze data effortlessly with Charts Analytics.",
+      imgUrl: graph,
+      url : "https://charts-analytics-app.vercel.app/"
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: realstate,
+      url : "https://real-estate-web.pages.dev/"
     },
     {
       title: "Business Startup",
