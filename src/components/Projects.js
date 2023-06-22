@@ -6,7 +6,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import movixThumbnail from "../assets/img/movix_TN.jpeg";
 import bankThumbnail from "../assets/img/bank_TNN.png";
 import graph from "../assets/img/graph.png";
-import realstate from "../assets/img/realstate.jpeg";
+import realstate from "../assets/img/realstate1.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
