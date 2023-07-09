@@ -7,6 +7,9 @@ import movixThumbnail from "../assets/img/movix_TN.jpeg";
 import bankThumbnail from "../assets/img/bank_TNN.png";
 import graph from "../assets/img/graph.png";
 import realstate from "../assets/img/realstate1.jpeg";
+import redStore from "../assets/img/redStore1.jpeg"
+import weatherApp from "../assets/img/weatherApp.png"
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -40,14 +43,22 @@ export const Projects = () => {
       url : "https://real-estate-web.pages.dev/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "RED STORE",
+      description: "Experience a seamless shopping journey with the vibrant Red Store app.",
+      imgUrl: redStore,
+      url :"https://red-store-website.web.app/"
     },
     {
-      title: "Business Startup",
+      title: "WEATHER APP",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: weatherApp,
+      url : "https://weather-application-ochre.vercel.app/"
+    },
+    {
+      title: "WEATHER APP",
+      description: "Design & Development",
+      imgUrl: weatherApp,
+      url : "https://weather-application-ochre.vercel.app/"
     },
   ];
 
@@ -62,7 +73,7 @@ export const Projects = () => {
                 <h2>Projects</h2>
                 <p>Here are a few past design projects I've worked on.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item style={{width : '50%'}}>
                       <Nav.Link  eventKey="first">Web Apps</Nav.Link>
                     </Nav.Item>
@@ -70,7 +81,7 @@ export const Projects = () => {
                     <Nav.Item style={{width : '50%'}}>
                       <Nav.Link eventKey="third">Mobile Apps</Nav.Link>
                     </Nav.Item>
-                  </Nav>
+                  </Nav> */}
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
