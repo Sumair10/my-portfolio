@@ -9,6 +9,8 @@ import graph from "../assets/img/graph.png";
 import realstate from "../assets/img/realstate1.jpeg";
 import redStore from "../assets/img/redStore1.jpeg"
 import weatherApp from "../assets/img/weatherApp.png"
+import ecom from "../assets/img/ecom.png"
+
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -50,15 +52,15 @@ export const Projects = () => {
     },
     {
       title: "WEATHER APP",
-      description: "Design & Development",
+      description: "Stay informed about the weather with the intuitive Weather app.",
       imgUrl: weatherApp,
-      url : "https://weather-application-ochre.vercel.app/"
+      url : "https://weather-application-ochre.vercel.app/" 
     },
     {
-      title: "WEATHER APP",
-      description: "Design & Development",
-      imgUrl: weatherApp,
-      url : "https://weather-application-ochre.vercel.app/"
+      title: "MY BAGS",
+      description: "Shop chic bags effortlessly with the My Bags Store app.",
+      imgUrl: ecom,
+      url : "https://my-bags-ecommerce.vercel.app/"
     },
   ];
 
