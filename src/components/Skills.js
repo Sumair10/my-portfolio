@@ -73,9 +73,10 @@ export const Skills = () => {
                       style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
+                      className="icon"
                     />
                     <h5>HTML </h5>
                   </div>
@@ -83,13 +84,14 @@ marginTop : 20
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   <div className="item">
                     <img
+                      className="icon"
                       src={css}
                       alt="Image"
-                       style={{
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
                     />
                     <h5>CSS </h5>
@@ -98,458 +100,277 @@ marginTop : 20
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   <div className="item">
                     <img
+                      className="icon"
                       src={js}
                       alt="Image"
-                       style={{
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
                     />
                     <h5>Javascript </h5>
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3 col-sm-4 col-6">   <div className="item">
-                  <img
-                    src={react}
-                    alt="Image"
-                     style={{
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={react}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>React js </h5>
-                </div></div>
-                <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={bs}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>React js </h5>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={bs}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 30
+                        marginBottom: 10,
+                        marginTop: 30,
                       }}
-                  />
-                  <h5>Bootstrap </h5>
-                </div></div>
-                <div className="col-lg-2 col-md-3 col-sm-4 col-6"> <div className="item">
-                  <img
-                    src={mui}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Bootstrap </h5>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={mui}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 30
+                        marginBottom: 10,
+                        marginTop: 30,
                       }}
-                  />
-                  <h5>Material UI </h5>
-                </div></div>
+                    />
+                    <h5>Material UI </h5>
+                  </div>
+                </div>
 
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={db}
-                    alt="Image"
-                     style={{
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={db}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>MongoDB </h5>
-                </div></div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={ant}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>MongoDB </h5>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={ant}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Ant Design </h5>
-                </div> </div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={redux}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Ant Design </h5>
+                  </div>{" "}
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={redux}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Redux </h5>
-                </div> </div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={gql}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Redux </h5>
+                  </div>{" "}
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={gql}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>GraphQL </h5>
-                </div></div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">   <div className="item">
-                  <img
-                    src={ts}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>GraphQL </h5>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={ts}
+                      alt="Image"
+                      style={{
                         width: "25%",
                         height: "25%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Typescript </h5>
-                </div> </div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">   <div className="item">
-                  <img
-                    src={nest}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Typescript </h5>
+                  </div>{" "}
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={nest}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Nest js </h5>
-                </div> </div>
-        
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={git}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Nest js </h5>
+                  </div>{" "}
+                </div>
+
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={git}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Github </h5>
-                </div> </div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={next}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Github </h5>
+                  </div>{" "}
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={next}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Next js </h5>
-                </div> </div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={pm}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Next js </h5>
+                  </div>{" "}
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={pm}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Postman </h5>
-                </div> </div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">    <div className="item">
-                  <img
-                    src={android}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Postman </h5>
+                  </div>{" "}
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={android}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Android </h5>
-                </div></div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">   <div className="item">
-                  <img
-                    src={node}
-                    alt="Image"
-                     style={{
+                    />
+                    <h5>Android </h5>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={node}
+                      alt="Image"
+                      style={{
                         width: "30%",
                         height: "30%",
-                        marginBottom:10,
-marginTop : 20
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Node js </h5>
-                </div></div>
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6">  <div className="item">
-                  <img
-                    src={firebase}
-                    alt="Image"
-                    style={{
+                    />
+                    <h5>Node js </h5>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={firebase}
+                      alt="Image"
+                      style={{
                         width: "22%",
                         height: "22%",
-                        marginBottom:10,
-marginTop : 20,
+                        marginBottom: 10,
+                        marginTop: 20,
                       }}
-                  />
-                  <h5>Firebase </h5>
-                </div> </div>
+                    />
+                    <h5>Firebase </h5>
+                  </div>{" "}
+                </div>
               </div>
-
-              {/* <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-            
-                <div className="item">
-                  <img
-                    src={git}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Github </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={ant}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Ant Design </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={android}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Android </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={gql}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>GraphQL </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={ts}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Typescript </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={pm}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Postman </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={redux}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Redux </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={node}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Node js </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={firebase}
-                    alt="Image"
-                    style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Firebase </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={html}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>HTML </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={css}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>CSS </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={js}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Javascript </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={react}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>React js </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={db}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>MongoDB </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={nest}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Nest js </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={next}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Next js </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={mui}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Material UI </h5>
-                </div>
-                <div className="item">
-                  <img
-                    src={bs}
-                    alt="Image"
-                     style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom:10,
-marginTop : 20
-                      }}
-                  />
-                  <h5>Bootstrap </h5>
-                </div>
-              </Carousel> */}
             </div>
           </div>
         </div>

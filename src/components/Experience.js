@@ -5,17 +5,14 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-export const Banner = () => {
+export const Experience = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [
-    "Hello, my name is ",
-    "const Sumair = ( name , passion ) =>",
-  ];
-  const period = 1000;
+  const toRotate = ["Web Developer", "Mobile App Developer", "Web Designer"];
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -48,16 +45,29 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(100);
+      setDelta(500);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
   };
 
   return (
-    <section className="banner" id="home">
+    <section className="experience">
       <Container>
         <Row className="aligh-items-center">
+          <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__zoomIn" : ""
+                  }
+                >
+                  <img src={headerImg} alt="Header Img" />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) => (
@@ -66,19 +76,8 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                  <span
-                    className="txt-rotate"
-                    dataPeriod="1000"
-                    data-rotate='[ "Hello, my name is ","const Sumair = ( name , passion ) =>" ]'
-                  >
-                    <span className="wrap">{text}</span>
-                  </span>
-                  <h1>Sumairverse</h1>
-                  <h1 class="iDo">
-                    I design and build meaningful experiences.
-                  </h1>
-                  {/* <h1>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
                     {`Hi! I'm Sumair`}{" "}
                     <span
                       className="txt-rotate"
@@ -87,7 +86,7 @@ export const Banner = () => {
                     >
                       <span className="wrap">{text}</span>
                     </span>
-                  </h1> */}
+                  </h1>
                   <p>
                     I am a skilled web developer and designer, combining
                     technical expertise with creative flair. With a focus on
@@ -100,19 +99,6 @@ export const Banner = () => {
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={headerImg} alt="Header Img" />
                 </div>
               )}
             </TrackVisibility>
