@@ -240,16 +240,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
+.logo1{
+  color:white;
+  margin-top: 18px;
+}
+
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
+  margin-bottom: 100px;
+  min-height: 100vh;
   padding: 260px 0 100px 0;
-  /* background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,146,149,1) 100%, rgba(0,249,255,1) 100%);
+  background: rgb(75,0,62);
+background: linear-gradient(302deg, rgba(75,0,62,1) 29%, rgba(0,72,94,1) 99%);
+
 
 }
 .banner .tagline {
@@ -298,6 +301,15 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,146,149,1) 100%, rgba
 .banner img {
   animation: updown 3s linear infinite;
 }
+
+.downloadResume{
+  font-size: 20px !important;
+  color :#88c5f0 !important;
+}
+.downloadResume:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -309,17 +321,33 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,146,149,1) 100%, rgba
         transform: translateY(-20px);
     }
 }
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+  
 }
+
+
 
 .txt-rotate {
   font-size: 20px;
-  color : #60b8f9
+  color : #88c5f0;
+  
 }
 
 .iDo {
-  color :rgb(255, 217, 217);
+  background: #7473C9;
+  background: linear-gradient(to right, #7473C9 0%, #CF5DA3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 50px !important;
 }
 /************ Skills Css ************/
@@ -328,7 +356,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,146,149,1) 100%, rgba
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #000000;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;

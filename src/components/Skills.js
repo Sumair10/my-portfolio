@@ -26,6 +26,7 @@ import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
+import TrackVisibility from "react-on-screen";
 
 export const Skills = () => {
   const responsive = {
@@ -54,7 +55,7 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
+              <h2 className="iDo">Skills</h2>
               <p>
                 As a web developer, I specialize in creating visually appealing
                 and responsive websites, leveraging modern web frameworks and
@@ -66,309 +67,490 @@ export const Skills = () => {
               </p>
               <div className="row">
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                  <div className="item">
-                    <img
-                      src={html}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                      className="icon"
-                    />
-                    <h5>HTML </h5>
-                  </div>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1.4s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          src={html}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                          className="icon"
+                        />
+                        <h5>HTML </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
+                </div>
+
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.55s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={css}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>CSS </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={css}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>CSS </h5>
-                  </div>
-                </div>
-                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={js}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Javascript </h5>
-                  </div>
-                </div>
-                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                  {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={react}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>React js </h5>
-                  </div>
-                </div>
-                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
-                  {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={bs}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 30,
-                      }}
-                    />
-                    <h5>Bootstrap </h5>
-                  </div>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.6s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={js}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Javascript </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={mui}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 30,
-                      }}
-                    />
-                    <h5>Material UI </h5>
-                  </div>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.65s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={react}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>React js </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.7s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={bs}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 30,
+                          }}
+                        />
+                        <h5>Bootstrap </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.75s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={mui}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 30,
+                          }}
+                        />
+                        <h5>Material UI </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </div>
 
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={db}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>MongoDB </h5>
-                  </div>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.8s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={db}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>MongoDB </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={ant}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Ant Design </h5>
-                  </div>{" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.85s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={ant}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Ant Design </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={redux}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Redux </h5>
-                  </div>{" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.9s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={redux}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Redux </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={gql}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>GraphQL </h5>
-                  </div>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 0.95s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={gql}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>GraphQL </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={ts}
-                      alt="Image"
-                      style={{
-                        width: "25%",
-                        height: "25%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Typescript </h5>
-                  </div>{" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={ts}
+                          alt="Image"
+                          style={{
+                            width: "25%",
+                            height: "25%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Typescript </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={nest}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Nest js </h5>
-                  </div>{" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1.05s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={nest}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Nest js </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>{" "}
                 </div>
 
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={git}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Github </h5>
-                  </div>{" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1.1s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={git}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Github </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={next}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Next js </h5>
-                  </div>{" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1.15s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={next}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Next js </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={pm}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Postman </h5>
-                  </div>{" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1.2s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={pm}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Postman </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={android}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Android </h5>
-                  </div>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1.25s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={android}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Android </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={node}
-                      alt="Image"
-                      style={{
-                        width: "30%",
-                        height: "30%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Node js </h5>
-                  </div>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1.3s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={node}
+                          alt="Image"
+                          style={{
+                            width: "30%",
+                            height: "30%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Node js </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
-                  <div className="item">
-                    <img
-                      className="icon"
-                      src={firebase}
-                      alt="Image"
-                      style={{
-                        width: "22%",
-                        height: "22%",
-                        marginBottom: 10,
-                        marginTop: 20,
-                      }}
-                    />
-                    <h5>Firebase </h5>
-                  </div>{" "}
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        style={{
+                          transform: isVisible ? "scale(1)" : "scale(0.5)",
+                          transition: "transform 1.35s",
+                        }}
+                        className="item"
+                      >
+                        <img
+                          className="icon"
+                          src={firebase}
+                          alt="Image"
+                          style={{
+                            width: "22%",
+                            height: "22%",
+                            marginBottom: 10,
+                            marginTop: 20,
+                          }}
+                        />
+                        <h5>Firebase </h5>
+                      </div>
+                    )}
+                  </TrackVisibility>{" "}
                 </div>
               </div>
             </div>

@@ -1,11 +1,21 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/contact-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { usePDF } from "react-to-pdf";
 
 export const Banner = () => {
+  const handleDownload = () => {
+    const fileUrl = "/SumairVerse_resume.pdf"; // Assuming the file is in the public folder
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "SumairVerse_resume.pdf"; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -62,9 +72,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
+                // className={
+                //   isVisible ? "animate__animated animate__fadeIn" : ""
+                // }
                 >
                   {/* <span className="tagline">Welcome to my Portfolio</span> */}
                   <span
@@ -89,17 +99,30 @@ export const Banner = () => {
                     </span>
                   </h1> */}
                   <p>
-                    I am a skilled web developer and designer, combining
-                    technical expertise with creative flair. With a focus on
-                    user-centric design and cutting-edge technologies, I bring
-                    ideas to life through seamless functionality and visually
-                    captivating interfaces. My portfolio reflects my commitment
-                    to excellence, collaborative approach, and a passion for
-                    pushing boundaries in the digital landscape.
+                    I am a skilled <b> Web</b> and Mobile App Developer,
+                    combining technical expertise with creative flair. With a
+                    focus on user-centric design and cutting-edge technologies,
+                    I bring ideas to life through seamless functionality and
+                    visually captivating interfaces. My portfolio reflects my
+                    commitment to excellence, collaborative approach, and a
+                    passion for pushing boundaries in the digital landscape.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <p className="downloadResume" onClick={handleDownload}>
+                    Download Resume{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-bar-down"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"
+                      />
+                    </svg>
+                  </p>
                 </div>
               )}
             </TrackVisibility>
@@ -108,9 +131,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
+                // className={
+                //   isVisible ? "animate__animated animate__zoomIn" : ""
+                // }
                 >
                   <img src={headerImg} alt="Header Img" />
                 </div>
