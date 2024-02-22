@@ -20,6 +20,12 @@ import android from "../assets/img/android.png";
 import ant from "../assets/img/ant.png";
 import git from "../assets/img/git.png";
 import api from "../assets/img/apii.png";
+import jquery from "../assets/img/jquery1.webp";
+import tw from "../assets/img/tw.png";
+import mysql from "../assets/img/mysql.png";
+import jira from "../assets/img/jira.png";
+import ios from "../assets/img/ios.webp";
+import py from "../assets/img/py.webp";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -78,7 +84,7 @@ export const Skills = () => {
                       }}
                       className="icon"
                     />
-                    <h5>HTML </h5>
+                    <h6>HTML </h6>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -94,7 +100,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>CSS </h5>
+                    <h6>CSS </h6>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -110,7 +116,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Javascript </h5>
+                    <h6>Javascript </h6>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -127,7 +133,41 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>React js </h5>
+                    <h6>React js </h6>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={jquery}
+                      alt="Image"
+                      style={{
+                        width: "30%",
+                        height: "30%",
+                        marginBottom: 10,
+                        marginTop: 20,
+                      }}
+                    />
+                    <h6>JQuery </h6>
+                  </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={tw}
+                      alt="Image"
+                      style={{
+                        width: "30%",
+                        height: "30%",
+                        marginBottom: 20,
+                        marginTop: 30,
+                      }}
+                    />
+                    <h6>Tailwind </h6>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -144,7 +184,7 @@ export const Skills = () => {
                         marginTop: 30,
                       }}
                     />
-                    <h5>Bootstrap </h5>
+                    <h6>Bootstrap </h6>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -161,7 +201,7 @@ export const Skills = () => {
                         marginTop: 30,
                       }}
                     />
-                    <h5>Material UI </h5>
+                    <h6>Material UI </h6>
                   </div>
                 </div>
 
@@ -179,7 +219,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>MongoDB </h5>
+                    <h6>MongoDB </h6>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -196,8 +236,26 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Ant Design </h5>
+                    <h6>Ant Design </h6>
                   </div>{" "}
+                </div>
+
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={mysql}
+                      alt="Image"
+                      style={{
+                        width: "40%",
+                        height: "40%",
+                        marginBottom: 2,
+                        marginTop: 10,
+                      }}
+                    />
+                    <h6>MySQL </h6>
+                  </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
@@ -213,7 +271,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Redux </h5>
+                    <h6>Redux </h6>
                   </div>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -230,7 +288,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>GraphQL </h5>
+                    <h6>GraphQL </h6>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -247,7 +305,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Typescript </h5>
+                    <h6>Typescript </h6>
                   </div>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -264,7 +322,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Nest js </h5>
+                    <h6>Nest js </h6>
                   </div>{" "}
                 </div>
 
@@ -282,7 +340,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Github </h5>
+                    <h6>Github </h6>
                   </div>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -297,9 +355,12 @@ export const Skills = () => {
                         height: "30%",
                         marginBottom: 10,
                         marginTop: 20,
+                        backgroundColor: "white",
+                        borderRadius: "50%",
+                        padding: 5,
                       }}
                     />
-                    <h5>Next js </h5>
+                    <h6>Next js </h6>
                   </div>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -316,7 +377,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Postman </h5>
+                    <h6>Postman </h6>
                   </div>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -333,8 +394,59 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Android </h5>
+                    <h6>Android </h6>
                   </div>
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={ios}
+                      alt="Image"
+                      style={{
+                        width: "30%",
+                        height: "30%",
+                        marginBottom: 10,
+                        marginTop: 20,
+                      }}
+                    />
+                    <h6>IOS </h6>
+                  </div>{" "}
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={py}
+                      alt="Image"
+                      style={{
+                        width: "30%",
+                        height: "30%",
+                        marginBottom: 10,
+                        marginTop: 20,
+                      }}
+                    />
+                    <h6>Python </h6>
+                  </div>{" "}
+                </div>
+                <div className="col-lg-2 col-md-3 col-sm-4 col-6">
+                  {" "}
+                  <div className="item">
+                    <img
+                      className="icon"
+                      src={jira}
+                      alt="Image"
+                      style={{
+                        width: "30%",
+                        height: "30%",
+                        marginBottom: 10,
+                        marginTop: 20,
+                      }}
+                    />
+                    <h6>Jira </h6>
+                  </div>{" "}
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
@@ -350,7 +462,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Node js </h5>
+                    <h6>Node js </h6>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -367,7 +479,7 @@ export const Skills = () => {
                         marginTop: 20,
                       }}
                     />
-                    <h5>Firebase </h5>
+                    <h6>Firebase </h6>
                   </div>{" "}
                 </div>
               </div>
