@@ -84,7 +84,7 @@ export const Banner = () => {
                   >
                     <span className="wrap">{text}</span>
                   </span>
-                  <h1>Sumairverse</h1>
+                  <h1 style={{ marginTop: "20px" }}>Sumairverse</h1>
                   <h1 class="iDo">
                     I design and build meaningful experiences.
                   </h1>
@@ -98,7 +98,7 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1> */}
-                  <p>
+                  <p style={{ fontSize: "15px" }}>
                     I am a skilled <b> Web</b> and Mobile App Developer,
                     combining technical expertise with creative flair. With a
                     focus on user-centric design and cutting-edge technologies,
@@ -107,9 +107,9 @@ export const Banner = () => {
                     commitment to excellence, collaborative approach, and a
                     passion for pushing boundaries in the digital landscape.
                   </p>
-                  <p className="downloadResume" onClick={handleDownload}>
+                  <button className="downloadResume" onClick={handleDownload}>
                     Download Resume{" "}
-                    <svg
+                    {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
                       height="20"
@@ -121,8 +121,8 @@ export const Banner = () => {
                         fill-rule="evenodd"
                         d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"
                       />
-                    </svg>
-                  </p>
+                    </svg> */}
+                  </button>
                 </div>
               )}
             </TrackVisibility>

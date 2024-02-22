@@ -250,10 +250,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 100px;
   min-height: 100vh;
   padding: 260px 0 100px 0;
-  background: rgb(75,0,62);
-background: linear-gradient(302deg, rgba(75,0,62,1) 29%, rgba(0,72,94,1) 99%);
-
-
+  background: rgb(41,0,34);
+  background: linear-gradient(302deg, rgba(41,0,34,1) 39%, rgba(0,72,94,1) 99%);
 }
 .banner .tagline {
   font-weight: 700;
@@ -303,12 +301,32 @@ background: linear-gradient(302deg, rgba(75,0,62,1) 29%, rgba(0,72,94,1) 99%);
 }
 
 .downloadResume{
-  font-size: 20px !important;
-  color :#88c5f0 !important;
+  font-size: 15px !important;
+
+  padding: 10px 15px;
+  border-radius: 50px;
+  margin-top: 20px !important;
+  transition: 0.5s;
+  color: black !important;
+  background-color: #88c5f0;
+  font-weight: 100;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .downloadResume:hover{
   cursor: pointer;
-  text-decoration: underline;
+  color :#88c5f0 !important;
+  background-color: black;
+  transition: 0.5s;
+  font-weight: 100;
+  /* box-shadow: #88c5f0 0px 5px 15px; */
+  box-shadow: black 0px 3px 8px;
+}
+
+.para{
+  background: #7473C9;
+  background: linear-gradient(to right, #7473C9 0%, #CF5DA3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @keyframes updown {
     0% {
