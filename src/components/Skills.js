@@ -41,15 +41,6 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p style={{ fontSize: "15px" }}>
-                As a web developer, I specialize in creating visually appealing
-                and responsive websites, leveraging modern web frameworks and
-                technologies. My expertise extends to both front-end and
-                back-end development, enabling me to build robust and scalable
-                web applications. With a keen focus on security and performance
-                optimization, I deliver projects that provide an exceptional
-                user experience.
-              </p>
               <div className="row">
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   <div className="item">
@@ -184,7 +175,6 @@ export const Skills = () => {
                     <h6>Material UI </h6>
                   </div>
                 </div>
-
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
                   <div className="item">
@@ -219,7 +209,6 @@ export const Skills = () => {
                     <h6>Ant Design </h6>
                   </div>{" "}
                 </div>
-
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
                   <div className="item">
@@ -305,7 +294,6 @@ export const Skills = () => {
                     <h6>Nest js </h6>
                   </div>{" "}
                 </div>
-
                 <div className="col-lg-2 col-md-3 col-sm-4 col-6">
                   {" "}
                   <div className="item">
@@ -467,7 +455,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
     </section>
   );
 };

@@ -84,7 +84,7 @@ export const Banner = () => {
                   >
                     <span className="wrap">{text}</span>
                   </span>
-                  <h1 style={{ marginTop: "20px" }}>Sumairverse</h1>
+                  <h1 class="sumairverse">Sumairverse</h1>
                   <h1 class="iDo">
                     I design and build meaningful experiences.
                   </h1>
@@ -98,14 +98,11 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1> */}
-                  <p style={{ fontSize: "15px" }}>
-                    I am a skilled <b> Web</b> and Mobile App Developer,
-                    combining technical expertise with creative flair. With a
-                    focus on user-centric design and cutting-edge technologies,
-                    I bring ideas to life through seamless functionality and
-                    visually captivating interfaces. My portfolio reflects my
-                    commitment to excellence, collaborative approach, and a
-                    passion for pushing boundaries in the digital landscape.
+                  <p class="desc" style={{ fontSize: "15px" }}>
+                    As a seasoned Web and Mobile App Developer, I seamlessly
+                    blend technical expertise with creative vision to craft
+                    user-centric designs and innovative solutions that redefine
+                    the digital experience.
                   </p>
                   <button className="downloadResume" onClick={handleDownload}>
                     Download Resume{" "}
@@ -131,9 +128,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                // className={
-                //   isVisible ? "animate__animated animate__zoomIn" : ""
-                // }
+                  class="image"
+                  // className={
+                  //   isVisible ? "animate__animated animate__zoomIn" : ""
+                  // }
                 >
                   <img src={headerImg} alt="Header Img" />
                 </div>
