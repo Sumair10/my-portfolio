@@ -514,6 +514,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .featured-head{
   display: flex;
   justify-content: center;
+  
 }
 
 /************ Projects Css ************/
