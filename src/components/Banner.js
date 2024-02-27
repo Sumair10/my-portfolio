@@ -98,7 +98,7 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1> */}
-                  <p class="desc" style={{ fontSize: "15px" }}>
+                  <p class="desc">
                     As a seasoned Web and Mobile App Developer, I seamlessly
                     blend technical expertise with creative vision to craft
                     user-centric designs and innovative solutions that redefine

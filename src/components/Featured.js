@@ -4,8 +4,12 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import new1 from "../assets/projects/new1.png";
-import new2 from "../assets/projects/new2.png";
+import n1 from "../assets/projects/n1.png";
+import n2 from "../assets/projects/n2.png";
+import n3 from "../assets/projects/n3.png";
+import n4 from "../assets/projects/n4.png";
+import n5 from "../assets/projects/n5.png";
+import n9 from "../assets/projects/n9.png";
 import {
   FaReact,
   FaHtml5,
@@ -18,6 +22,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { DiMongodb } from "react-icons/di";
 import { SiNestjs } from "react-icons/si";
 import { BsAndroid2 } from "react-icons/bs";
+import { RiExternalLinkFill } from "react-icons/ri";
 
 export const Featured = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -71,10 +76,25 @@ export const Featured = () => {
         <div className="row">
           <div className="col-md-6 col-sm-12  divDetail">
             <div className="innerDivDetail">
-              <h1>FormOle</h1>
-              <h5>Coaching Application</h5>
+              <h1 class="iDo">FormOlé</h1>
+              <a
+                href="https://formole.net/"
+                target="_blank"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <h5>
+                  Coaching Application{" "}
+                  <RiExternalLinkFill className="externalLink" />
+                </h5>
+              </a>
               <p class="desc" style={{ fontSize: "15px" }}>
-                AI for athletes who celebrate proper form.
+                FormOle is a cutting-edge, AI-based app that helps you practice
+                your form and technique in fundamental Soccer skills, such as a
+                taking a Free Kick. It’s simple to use: you don't need sensors
+                or any specialized recording equipment. Just your phone. Place
+                the soccer-ball down and step back to set your phone at the
+                recommended recording angle. Tap the big red button and take
+                your shot!
               </p>
               <div className="detailIconDiv">
                 <TrackVisibility>
@@ -197,11 +217,158 @@ export const Featured = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div>
-                  <img src={new1} className="img1" />
-                  <img src={new2} className="img2" />
+                  <img src={n5} className="img1" />
+                  {/* <img src={n2} className="img2" /> */}
                 </div>
               )}
             </TrackVisibility>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6 col-sm-12 divImage">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div>
+                  <img src={n9} className="img1" />
+                  {/* <img src={n2} className="img2" /> */}
+                </div>
+              )}
+            </TrackVisibility>
+          </div>
+          <div className="col-md-6 col-sm-12  divDetail">
+            <div className="innerDivDetail">
+              <h1 class="iDo">Minmini</h1>
+              <a
+                href="https://formole.net/"
+                target="_blank"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <h5>
+                  Data Labeling Platform{" "}
+                  <RiExternalLinkFill className="externalLink" />
+                </h5>
+              </a>
+              <p class="desc" style={{ fontSize: "15px" }}>
+                The app addresses the challenges faced by companies in labeling
+                their massive amount of data and offering users a chance to
+                enhance skills and earn income through a streamlined process
+              </p>
+              <div className="detailIconDiv">
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaReact style={{ marginRight: "5px" }} /> REACTNATIVE
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <IoLogoJavascript style={{ marginRight: "5px" }} />{" "}
+                      JAVASCRIPT
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaHtml5 style={{ marginRight: "5px" }} /> HTML5
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaCss3Alt style={{ marginRight: "5px" }} /> CSS3
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaNodeJs style={{ marginRight: "5px" }} /> NODEJS
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <DiMongodb style={{ marginRight: "5px" }} /> MONGODB
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaGithub style={{ marginRight: "5px" }} /> GITHUB
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <SiNestjs style={{ marginRight: "5px" }} /> NESTJS
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <BsAndroid2 style={{ marginRight: "5px" }} /> ANDROID
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaApple style={{ marginRight: "5px" }} /> IOS
+                    </p>
+                  )}
+                </TrackVisibility>
+              </div>
+            </div>
           </div>
         </div>
       </Container>
