@@ -488,9 +488,7 @@ nav.navbar img{
   justify-content: center;
 
 }
-.featured .divDetail .innerDivDetail h1,h5,p {
-  text-align: center;
-}
+
 .featured .externalLink {
   margin-top: -4px;
 }
@@ -508,6 +506,7 @@ nav.navbar img{
 .innerDivDetail .detailIconDiv {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .innerDivDetail .detailIcons {
   color: lightgray;
@@ -836,6 +835,10 @@ nav.navbar img{
   margin-top: 20px;
 }
 
+.imageDivForMobile{
+  display: none !important;
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -860,5 +863,22 @@ nav.navbar img{
     transition:  0.32s ease-in-out;
   }
 
+  .imageDivForLaptop{
+    display: none !important;
+  }
+
+  .imageDivForMobile{
+    display: block !important;
+  }
+  
+  .innerDivDetail .detailIconsVisible {
+    opacity: 0.6;
+    font-size: 10px;
+    margin-right: 5px;
+    /* margin-left: 0px; */
+    padding: 5px 10px;
+    margin-top: -5px;
+  
+  }
 
 }

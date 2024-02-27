@@ -225,7 +225,7 @@ export const Featured = () => {
           </div>
         </div>
         <div className="row project2">
-          <div className="col-md-6 col-sm-12 order-md-1  order-sm-2 divImage">
+          <div className="col-md-6 col-sm-12 order-md-1  order-sm-2 divImage imageDivForLaptop">
             <TrackVisibility>
               {({ isVisible }) => (
                 <div>
@@ -245,7 +245,10 @@ export const Featured = () => {
               >
                 <h5>
                   Automated Bio-metric and KYC Tool
-                  <RiExternalLinkFill className="externalLink" />
+                  <RiExternalLinkFill
+                    className="externalLink"
+                    style={{ marginLeft: "5px" }}
+                  />
                 </h5>
               </a>
               <p
@@ -377,6 +380,17 @@ export const Featured = () => {
                 </TrackVisibility>
               </div>
             </div>
+          </div>
+          {/* // for mobile */}
+          <div className="col-md-6 col-sm-12 order-md-1  order-sm-2 divImage imageDivForMobile">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div>
+                  <img src={n17} className="img2" />
+                  {/* <img src={n2} className="img2" /> */}
+                </div>
+              )}
+            </TrackVisibility>
           </div>
         </div>
         <div className="row project2">
@@ -527,7 +541,7 @@ export const Featured = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-6 col-sm-12 order-md-1 order-sm-2 divImage">
+          <div className="col-md-6 col-sm-12 order-md-1 order-sm-2 divImage imageDivForLaptop">
             <TrackVisibility>
               {({ isVisible }) => (
                 <div>
@@ -651,6 +665,19 @@ export const Featured = () => {
                 </TrackVisibility>
               </div>
             </div>
+          </div>
+
+          {/* for mobile  */}
+
+          <div className="col-md-6 col-sm-12 order-md-1 order-sm-2 divImage imageDivForMobile">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div>
+                  <img src={n13} className="img2" />
+                  {/* <img src={n2} className="img2" /> */}
+                </div>
+              )}
+            </TrackVisibility>
           </div>
         </div>
       </Container>
