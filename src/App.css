@@ -482,7 +482,14 @@ nav.navbar img{
 .featured .divDetail .innerDivDetail {
   border-left: 1px solid #88c5f0;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+}
+.featured .divDetail .innerDivDetail h1,h5,p {
+  text-align: center;
 }
 .featured .externalLink {
   margin-top: -4px;
@@ -853,8 +860,5 @@ nav.navbar img{
     transition:  0.32s ease-in-out;
   }
 
-  .featured .project2{
-    display: flex;
-    flex-direction: row-reverse;
-  }
+
 }

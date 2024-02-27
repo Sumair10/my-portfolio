@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowRightCircle, Windows } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import n1 from "../assets/projects/n1.png";
 import n2 from "../assets/projects/n2.png";
-import n3 from "../assets/projects/n3.png";
+import n17 from "../assets/projects/n17.png";
 import n13 from "../assets/projects/n13.png";
 import n5 from "../assets/projects/n5.png";
 import n9 from "../assets/projects/n9.png";
@@ -229,13 +229,158 @@ export const Featured = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div>
-                  <img src={n9} className="img1" />
+                  <img src={n17} className="img2" />
                   {/* <img src={n2} className="img2" /> */}
                 </div>
               )}
             </TrackVisibility>
           </div>
           <div className="col-md-6 col-sm-12 order-md-2 order-sm-1 divDetail">
+            <div className="innerDivDetail">
+              <h1 class="iDo">VOLTOX</h1>
+              <a
+                href="https://voltox.ch/en"
+                target="_blank"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <h5>
+                  Automated Bio-metric and KYC Tool
+                  <RiExternalLinkFill className="externalLink" />
+                </h5>
+              </a>
+              <p
+                class="desc"
+                style={{ fontSize: "15px", textAlign: "center !important" }}
+              >
+                Voltox solves many challenges that customers and users come
+                across every day in online registration and manual login
+                processes by automating them using AI-powered techniques that
+                help users register at once through ID card scanning and
+                liveness detection Once registered, users can enjoy the
+                convenience of password-free logins with just a single click
+                while encrypting their sensitive data all thanks to real-time
+                face recognition technology.
+              </p>
+              <div className="detailIconDiv">
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaReact style={{ marginRight: "5px" }} /> REACTNATIVE
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <IoLogoJavascript style={{ marginRight: "5px" }} />{" "}
+                      JAVASCRIPT
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaHtml5 style={{ marginRight: "5px" }} /> HTML5
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaCss3Alt style={{ marginRight: "5px" }} /> CSS3
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaNodeJs style={{ marginRight: "5px" }} /> NODEJS
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <DiMongodb style={{ marginRight: "5px" }} /> MONGODB
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaGithub style={{ marginRight: "5px" }} /> GITHUB
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <SiNestjs style={{ marginRight: "5px" }} /> NESTJS
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <BsAndroid2 style={{ marginRight: "5px" }} /> ANDROID
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaApple style={{ marginRight: "5px" }} /> IOS
+                    </p>
+                  )}
+                </TrackVisibility>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row project2">
+          <div className="col-md-6 col-sm-12  divDetail">
             <div className="innerDivDetail">
               <h1 class="iDo">Minmini</h1>
               <a
@@ -370,9 +515,29 @@ export const Featured = () => {
               </div>
             </div>
           </div>
+          <div className="col-md-6 col-sm-12 divImage">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div>
+                  <img src={n9} className="img1" />
+                  {/* <img src={n2} className="img2" /> */}
+                </div>
+              )}
+            </TrackVisibility>
+          </div>
         </div>
         <div className="row">
-          <div className="col-md-6 col-sm-12  divDetail">
+          <div className="col-md-6 col-sm-12 order-md-1 order-sm-2 divImage">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div>
+                  <img src={n13} className="img2" />
+                  {/* <img src={n2} className="img2" /> */}
+                </div>
+              )}
+            </TrackVisibility>
+          </div>
+          <div className="col-md-6 col-sm-12  order-md-2  order-sm-1 divDetail">
             <div className="innerDivDetail">
               <h1 class="iDo">MoviX</h1>
               <a
@@ -481,168 +646,6 @@ export const Featured = () => {
                       }
                     >
                       <SiNestjs style={{ marginRight: "5px" }} /> NESTJS
-                    </p>
-                  )}
-                </TrackVisibility>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-sm-12 divImage">
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div>
-                  <img src={n13} className="img2" />
-                  {/* <img src={n2} className="img2" /> */}
-                </div>
-              )}
-            </TrackVisibility>
-          </div>
-        </div>
-        <div className="row project2">
-          <div className="col-md-6 col-sm-12 order-md-1  order-sm-2 divImage">
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div>
-                  <img src={n9} className="img2" />
-                  {/* <img src={n2} className="img2" /> */}
-                </div>
-              )}
-            </TrackVisibility>
-          </div>
-          <div className="col-md-6 col-sm-12 order-md-2 order-sm-1 divDetail">
-            <div className="innerDivDetail">
-              <h1 class="iDo">VOLTOX</h1>
-              <a
-                href="https://voltox.ch/en"
-                target="_blank"
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <h5>
-                  Automated Bio-metric and KYC Tool
-                  <RiExternalLinkFill className="externalLink" />
-                </h5>
-              </a>
-              <p class="desc" style={{ fontSize: "15px" }}>
-                Voltox solves many challenges that customers and users come
-                across every day in online registration and manual login
-                processes by automating them using AI-powered techniques that
-                help users register at once through ID card scanning and
-                liveness detection Once registered, users can enjoy the
-                convenience of password-free logins with just a single click
-                while encrypting their sensitive data all thanks to real-time
-                face recognition technology.
-              </p>
-              <div className="detailIconDiv">
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <FaReact style={{ marginRight: "5px" }} /> REACTNATIVE
-                    </p>
-                  )}
-                </TrackVisibility>
-
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <IoLogoJavascript style={{ marginRight: "5px" }} />{" "}
-                      JAVASCRIPT
-                    </p>
-                  )}
-                </TrackVisibility>
-
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <FaHtml5 style={{ marginRight: "5px" }} /> HTML5
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <FaCss3Alt style={{ marginRight: "5px" }} /> CSS3
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <FaNodeJs style={{ marginRight: "5px" }} /> NODEJS
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <DiMongodb style={{ marginRight: "5px" }} /> MONGODB
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <FaGithub style={{ marginRight: "5px" }} /> GITHUB
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <SiNestjs style={{ marginRight: "5px" }} /> NESTJS
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <BsAndroid2 style={{ marginRight: "5px" }} /> ANDROID
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <FaApple style={{ marginRight: "5px" }} /> IOS
                     </p>
                   )}
                 </TrackVisibility>
