@@ -484,28 +484,6 @@ export const Featured = () => {
                     </p>
                   )}
                 </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <BsAndroid2 style={{ marginRight: "5px" }} /> ANDROID
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <FaApple style={{ marginRight: "5px" }} /> IOS
-                    </p>
-                  )}
-                </TrackVisibility>
               </div>
             </div>
           </div>
