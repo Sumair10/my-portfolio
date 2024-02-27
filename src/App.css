@@ -240,12 +240,20 @@ nav.navbar img{
 
 /************ Edxperience Css ************/
 .experience {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
-  /* background-image: url('./assets/img/back.png'); */
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-color: #000;
+ padding-top: 20px;
+}
+
+.experience .desc {
+  color: #5c5c5c;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  line-height: 1.3em;
+  width: 96%;
+  font-weight: lighter !important;
+  border-left: 1px solid #88c5f0;
+  padding-left: 5px;
+  /* text-align: justify; */
 }
 
 .logo1{
@@ -380,6 +388,15 @@ nav.navbar img{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 50px !important;
+}
+
+.iDo1 {
+  background: #7473C9;
+  background: linear-gradient(to right, #7473C9 0%, #CF5DA3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0px;
+  /* font-size: 16px !important;  */
 }
 /************ Skills Css ************/
 .skill {
