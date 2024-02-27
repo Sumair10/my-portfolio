@@ -507,6 +507,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
   transition: 1s;
   transform: translateY(-10%);
+  
 }
 
 
@@ -514,7 +515,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .featured-head{
   display: flex;
   justify-content: center;
-  
+
 }
 
 /************ Projects Css ************/
