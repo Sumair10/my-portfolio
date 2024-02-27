@@ -7,7 +7,7 @@ import TrackVisibility from "react-on-screen";
 import n1 from "../assets/projects/n1.png";
 import n2 from "../assets/projects/n2.png";
 import n3 from "../assets/projects/n3.png";
-import n4 from "../assets/projects/n4.png";
+import n13 from "../assets/projects/n13.png";
 import n5 from "../assets/projects/n5.png";
 import n9 from "../assets/projects/n9.png";
 import {
@@ -224,8 +224,8 @@ export const Featured = () => {
             </TrackVisibility>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-6 col-sm-12 divImage">
+        <div className="row project2">
+          <div className="col-md-6 col-sm-12 order-md-1  order-sm-2 divImage">
             <TrackVisibility>
               {({ isVisible }) => (
                 <div>
@@ -235,11 +235,11 @@ export const Featured = () => {
               )}
             </TrackVisibility>
           </div>
-          <div className="col-md-6 col-sm-12  divDetail">
+          <div className="col-md-6 col-sm-12 order-md-2 order-sm-1 divDetail">
             <div className="innerDivDetail">
               <h1 class="iDo">Minmini</h1>
               <a
-                href="https://formole.net/"
+                href="https://tezeract.ai/minmini/"
                 target="_blank"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -369,6 +369,155 @@ export const Featured = () => {
                 </TrackVisibility>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6 col-sm-12  divDetail">
+            <div className="innerDivDetail">
+              <h1 class="iDo">MoviX</h1>
+              <a
+                href="https://movie-raiting-app.vercel.app"
+                target="_blank"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <h5>
+                  Your Ultimate Movie Experience{" "}
+                  <RiExternalLinkFill className="externalLink" />
+                </h5>
+              </a>
+              <p class="desc" style={{ fontSize: "15px" }}>
+                Discover a universe of cinematic wonders with our
+                trailer-focused movie app. Dive into a collection where every
+                click unveils captivating previews, offering a glimpse into the
+                heart of each film. Welcome to a world where the excitement of
+                cinema begins with every trailer.
+              </p>
+              <div className="detailIconDiv">
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaReact style={{ marginRight: "5px" }} /> REACT
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <IoLogoJavascript style={{ marginRight: "5px" }} />{" "}
+                      JAVASCRIPT
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaHtml5 style={{ marginRight: "5px" }} /> HTML5
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaCss3Alt style={{ marginRight: "5px" }} /> CSS3
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaNodeJs style={{ marginRight: "5px" }} /> NODEJS
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <DiMongodb style={{ marginRight: "5px" }} /> MONGODB
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaGithub style={{ marginRight: "5px" }} /> GITHUB
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <SiNestjs style={{ marginRight: "5px" }} /> NESTJS
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <BsAndroid2 style={{ marginRight: "5px" }} /> ANDROID
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaApple style={{ marginRight: "5px" }} /> IOS
+                    </p>
+                  )}
+                </TrackVisibility>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-sm-12 divImage">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div>
+                  <img src={n13} className="img2" />
+                  {/* <img src={n2} className="img2" /> */}
+                </div>
+              )}
+            </TrackVisibility>
           </div>
         </div>
       </Container>
