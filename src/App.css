@@ -467,7 +467,7 @@ nav.navbar img{
   animation: updown 3s linear infinite;
 }
 .featured .divImage .img1 {
-  max-width: 90%;
+  max-width: 100%;
   /* max-height: 100%; */
   /* margin-top: -40px; */
   transition: 1s;
@@ -475,7 +475,7 @@ nav.navbar img{
   filter: drop-shadow(rgba(0, 0, 0, 0.85) 0px 5px 15px);
 }
 .featured .divImage .img2 {
-  max-width: 90%;
+  max-width: 100%;
   transition: 1s;
   filter: drop-shadow(rgba(0, 0, 0, 3.85) 0px 5px 3px);
 }
