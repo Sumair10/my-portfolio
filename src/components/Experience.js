@@ -7,51 +7,25 @@ import TrackVisibility from "react-on-screen";
 import { VscDebugBreakpointFunction } from "react-icons/vsc";
 
 export const Experience = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Mobile App Developer", "Web Designer"];
-  const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
-    }
+  const [moreLess, setMoreLess] = useState({
+    one: true,
+    two: true,
+    three: true,
+    four: true,
+  });
+  const handleSeeMore = (jobNumber) => {
+    console.log(jobNumber);
+    setMoreLess({
+      ...moreLess,
+      [jobNumber]: false,
+    });
   };
-
+  const handleSeeLess = (jobNumber) => {
+    setMoreLess({
+      ...moreLess,
+      [jobNumber]: true,
+    });
+  };
   return (
     <section className="experience">
       <Container>
@@ -75,18 +49,36 @@ export const Experience = () => {
               • Played a key role in migrating Stretto legacy website to a React
               web app, enhancing solutions for corporate restructuring and
               financial transactions, resulting in improved user experience and
-              functionality. <br /> show more... • Implemented key backend
-              features with .NET MVC, boosting system performance by 60% and
-              seamlessly integrating with MySQL database, enhancing financial
-              services functionalities.
-              <br />
-              • Actively participated in code reviews, offering constructive
-              feedback and implementing optimizations to enhance the code
-              quality, maintainability, and performance.
-              <br />• Increased productivity by 20% through the application of
-              active listening skills, fostering better collaboration and
-              understanding among colleagues during project discussions and task
-              execution.
+              functionality.{" "}
+              <span
+                className="seeMore"
+                style={{ color: "lightgray", display: "inline" }}
+                onClick={() => handleSeeMore("one")}
+              >
+                {moreLess.one && "more..."}
+              </span>{" "}
+              <br />{" "}
+              <p className={moreLess.one ? "extraDetail" : ""}>
+                {" "}
+                • Implemented key backend features with .NET MVC, boosting
+                system performance by 60% and seamlessly integrating with MySQL
+                database, enhancing financial services functionalities.
+                <br />
+                • Actively participated in code reviews, offering constructive
+                feedback and implementing optimizations to enhance the code
+                quality, maintainability, and performance.
+                <br />• Increased productivity by 20% through the application of
+                active listening skills, fostering better collaboration and
+                understanding among colleagues during project discussions and
+                task execution.
+                <span
+                  className="seeMore"
+                  style={{ color: "lightgray", display: "inline" }}
+                  onClick={() => handleSeeLess("one")}
+                >
+                  {!moreLess.one && "less"}
+                </span>
+              </p>
             </p>
             {/* <VscDebugBreakpointFunction /> */}
           </Col>
@@ -108,16 +100,35 @@ export const Experience = () => {
               • Spearheaded front-end development and user interface maintenance
               for WeQuote's advertising solution, resulting in a 30% increase in
               engagement rates.
-              <br /> • Leveraged Node JS and MongoDB to streamline backend
-              operations, ensuring efficient data management and processing,
-              thus enhancing system performance.
-              <br /> • Achieved a 50% increase in high-quality leads by
-              implementing lead generation strategies and optimizing frontend
-              components, while ensuring seamless integration for enhanced
-              system responsiveness.
-              <br /> • Led front-end team to a 40% performance boost through
-              strategic leadership, fostering collaboration, and implementing
-              efficient management practices.
+              <br />
+              <span
+                className="seeMore"
+                style={{ color: "lightgray", display: "inline" }}
+                onClick={() => handleSeeMore("two")}
+              >
+                {moreLess.two && "more..."}
+              </span>{" "}
+              <br />{" "}
+              <p className={moreLess.two ? "extraDetail" : ""}>
+                {" "}
+                • Leveraged Node JS and MongoDB to streamline backend
+                operations, ensuring efficient data management and processing,
+                thus enhancing system performance.
+                <br /> • Achieved a 50% increase in high-quality leads by
+                implementing lead generation strategies and optimizing frontend
+                components, while ensuring seamless integration for enhanced
+                system responsiveness.
+                <br /> • Led front-end team to a 40% performance boost through
+                strategic leadership, fostering collaboration, and implementing
+                efficient management practices.
+                <span
+                  className="seeMore"
+                  style={{ color: "lightgray", display: "inline" }}
+                  onClick={() => handleSeeLess("two")}
+                >
+                  {!moreLess.two && "less"}
+                </span>
+              </p>
             </p>
             {/* <VscDebugBreakpointFunction /> */}
           </Col>
@@ -140,17 +151,35 @@ export const Experience = () => {
               systems, achieving a 70% increase in accuracy and precision, while
               consistently achieving optimal levels of personal performance and
               accomplishment.
-              <br /> • Led dynamic leadership in creating intuitive React Native
-              interfaces, integrating AI APIs for enhanced functionality.
-              Introduced innovative features like background removal, fostering
-              creativity.
-              <br /> • Effectively utilized React JS, Node JS, and MongoDB to
-              streamline backend operations, resulting in a 50% improvement in
-              administrative efficiency and a 60% increase in system
-              performance.
-              <br /> • Managed a frontend team, ensuring effective
-              collaboration, timely project delivery, and adherence to quality
-              standards.
+              <span
+                className="seeMore"
+                style={{ color: "lightgray", display: "inline" }}
+                onClick={() => handleSeeMore("three")}
+              >
+                {moreLess.three && "more..."}
+              </span>{" "}
+              <br />{" "}
+              <p className={moreLess.three ? "extraDetail" : ""}>
+                {" "}
+                <br /> • Led dynamic leadership in creating intuitive React
+                Native interfaces, integrating AI APIs for enhanced
+                functionality. Introduced innovative features like background
+                removal, fostering creativity.
+                <br /> • Effectively utilized React JS, Node JS, and MongoDB to
+                streamline backend operations, resulting in a 50% improvement in
+                administrative efficiency and a 60% increase in system
+                performance.
+                <br /> • Managed a frontend team, ensuring effective
+                collaboration, timely project delivery, and adherence to quality
+                standards.
+                <span
+                  className="seeMore"
+                  style={{ color: "lightgray", display: "inline" }}
+                  onClick={() => handleSeeLess("three")}
+                >
+                  {!moreLess.three && "less"}
+                </span>
+              </p>
             </p>
             {/* <VscDebugBreakpointFunction /> */}
           </Col>
@@ -172,10 +201,27 @@ export const Experience = () => {
               • Specialize in crafting visually appealing and responsive web
               interfaces using HTML, CSS, and JavaScript to exceed client
               expectations.
-              <br /> • Keep abreast of the latest tech trends, infusing projects
-              with design flair and ensuring seamless functionality across
-              browsers, aiming to create immersive digital experiences that
-              showcase technical skills and elevate online presence.
+              <span
+                className="seeMore"
+                style={{ color: "lightgray", display: "inline" }}
+                onClick={() => handleSeeMore("four")}
+              >
+                {moreLess.four && "more..."}
+              </span>{" "}
+              <br />{" "}
+              <p className={moreLess.four ? "extraDetail" : ""}>
+                <br /> • Keep abreast of the latest tech trends, infusing
+                projects with design flair and ensuring seamless functionality
+                across browsers, aiming to create immersive digital experiences
+                that showcase technical skills and elevate online presence.
+                <span
+                  className="seeMore"
+                  style={{ color: "lightgray", display: "inline" }}
+                  onClick={() => handleSeeLess("four")}
+                >
+                  {!moreLess.four && "less"}
+                </span>
+              </p>
             </p>
             {/* <VscDebugBreakpointFunction /> */}
           </Col>

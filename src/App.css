@@ -858,7 +858,12 @@ nav.navbar img{
 }
 
 
-
+.seeMore{
+  display: none;
+}
+.extraDetail{
+  display: inline;
+}
 @media only screen and (max-width: 600px) {
   .sumairverse {
       font-size: 3em !important; /* Adjust font size for smaller screens */
@@ -888,15 +893,22 @@ nav.navbar img{
   .imageDivForMobile{
     display: block !important;
   }
+
+  .innerDivDetail .detailIconDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
   
   .innerDivDetail .detailIconsVisible {
-    opacity: 0.6;
-    font-size: 10px;
-    margin-right: 5px;
-    /* margin-left: 0px; */
-    padding: 5px 10px;
     margin-top: -5px;
-  
+  }
+  .seeMore{
+    display: block;
+  }
+
+  .extraDetail {
+    display: none;
   }
 
 }
