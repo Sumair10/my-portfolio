@@ -242,6 +242,7 @@ nav.navbar img{
 .experience {
  background-color: #000;
  padding-top: 20px;
+ padding-bottom: 20px;
 }
 
 .experience .desc {
@@ -859,7 +860,7 @@ nav.navbar img{
 
 
 .seeMore{
-  display: none;
+  display: none !important;
 }
 .extraDetail{
   display: inline;
@@ -904,7 +905,7 @@ nav.navbar img{
     margin-top: -5px;
   }
   .seeMore{
-    display: block;
+    display: inline !important;
   }
 
   .extraDetail {

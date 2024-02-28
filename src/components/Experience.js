@@ -100,7 +100,6 @@ export const Experience = () => {
               • Spearheaded front-end development and user interface maintenance
               for WeQuote's advertising solution, resulting in a 30% increase in
               engagement rates.
-              <br />
               <span
                 className="seeMore"
                 style={{ color: "lightgray", display: "inline" }}
@@ -161,10 +160,10 @@ export const Experience = () => {
               <br />{" "}
               <p className={moreLess.three ? "extraDetail" : ""}>
                 {" "}
-                <br /> • Led dynamic leadership in creating intuitive React
-                Native interfaces, integrating AI APIs for enhanced
-                functionality. Introduced innovative features like background
-                removal, fostering creativity.
+                • Led dynamic leadership in creating intuitive React Native
+                interfaces, integrating AI APIs for enhanced functionality.
+                Introduced innovative features like background removal,
+                fostering creativity.
                 <br /> • Effectively utilized React JS, Node JS, and MongoDB to
                 streamline backend operations, resulting in a 50% improvement in
                 administrative efficiency and a 60% increase in system
@@ -210,10 +209,10 @@ export const Experience = () => {
               </span>{" "}
               <br />{" "}
               <p className={moreLess.four ? "extraDetail" : ""}>
-                <br /> • Keep abreast of the latest tech trends, infusing
-                projects with design flair and ensuring seamless functionality
-                across browsers, aiming to create immersive digital experiences
-                that showcase technical skills and elevate online presence.
+                • Keep abreast of the latest tech trends, infusing projects with
+                design flair and ensuring seamless functionality across
+                browsers, aiming to create immersive digital experiences that
+                showcase technical skills and elevate online presence.
                 <span
                   className="seeMore"
                   style={{ color: "lightgray", display: "inline" }}
