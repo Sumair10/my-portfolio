@@ -27,6 +27,7 @@ import { DiMongodb } from "react-icons/di";
 import { SiNestjs } from "react-icons/si";
 import { BsAndroid2 } from "react-icons/bs";
 import { RiExternalLinkFill } from "react-icons/ri";
+import { MdOutlinePreview } from "react-icons/md";
 
 export const ProjectsNew = () => {
   return (
@@ -36,45 +37,351 @@ export const ProjectsNew = () => {
           <h1 className="featured-head">Projects</h1>
         </div>
         <Row>
-          <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
-            <div class="imageContainer">
-              <img src={n20} className="img1NewProject" />
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
+              <h6>Car Rental</h6>
+            </Row>
+            <a
+              href="https://car-rental-ten.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <div class="imageContainer">
+                <img src={n20} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
-            <div class="imageContainer">
-              <img src={n22} className="img1NewProject" />
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
+              <h6>Minimalist</h6>
+            </Row>
+
+            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+              <div class="imageContainer">
+                <img src={n22} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href=""
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href=""
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
-            <div class="imageContainer">
-              <img src={n29} className="img1NewProject" />
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
+              <h6>Gymate</h6>
+            </Row>
+            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+              <div class="imageContainer">
+                <img src={n29} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href=""
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
-            <div class="imageContainer">
-              <img src={n25} className="img1NewProject" />
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
+              <h6>Hoo Bank</h6>
+            </Row>
+
+            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+              <div class="imageContainer">
+                <img src={n25} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href=""
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
             </div>
           </Col>
 
-          <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
-            <div class="imageContainer">
-              <img src={n26} className="img1NewProject" />
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
+              <h6>My Bags</h6>
+            </Row>
+
+            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+              <div class="imageContainer">
+                <img src={n26} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href=""
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
-            <div class="imageContainer">
-              <img src={n27} className="img1NewProject" />
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
+              <h6>Red Store</h6>
+            </Row>
+
+            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+              <div class="imageContainer">
+                <img src={n27} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href=""
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
-            <div class="imageContainer">
-              <img src={n28} className="img1NewProject" />
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
+              <h6>Chart Analytics</h6>
+            </Row>
+
+            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+              <div class="imageContainer">
+                <img src={n28} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href=""
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
             </div>
           </Col>
-          <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
-            <div class="imageContainer">
-              <img src={n30} className="img1NewProject" />
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
+              <h6>REAL STATE</h6>
+            </Row>
+
+            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+              <div class="imageContainer">
+                <img src={n30} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href=""
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
             </div>
           </Col>
         </Row>

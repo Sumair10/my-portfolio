@@ -265,8 +265,8 @@ nav.navbar img{
 /************ Banner Css ************/
 .banner {
   /* margin-bottom: 100px; */
-  min-height: 100vh;
-  padding: 260px 0 100px 0;
+  /* min-height: 100vh; */
+  padding: 150px 0 100px 0;
   background: rgb(41,0,34);
   background: linear-gradient(302deg, rgba(41,0,34,1) 39%, rgba(0,72,94,1) 99%);
 }
@@ -577,7 +577,7 @@ nav.navbar img{
 /***************** new projects ****************/
 .projectsNew {
  min-height: 100vh;
-  padding: 20px 0 10px 0;
+  padding: 20px 0 50px 0;
    background: rgb(41,0,34);
   background: linear-gradient(302deg, rgba(41,0,34,1) 39%, rgba(0,72,94,1) 99%);
 }
@@ -585,14 +585,72 @@ nav.navbar img{
   height: 300px;
   overflow: hidden;
   border-radius: 10px;
-  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s;
+  opacity: 0.5;
 }
 .projectsNew .imageContainer:hover {
-  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.5s;
+  opacity: 0.8;
 }
-.projectsNew .img1NewProject {
-  
+.projectsNew .divImage {
+  margin-top: 50px;
 }
+
+.projectsNew h6{
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+
+
+.projectsNew .detailIconsVisible:hover {
+  color: hsl(205, 78%, 74% , 0.8);
+  border: 1px solid #88c5f0;
+  transition: 1s;
+  opacity: 1;
+}
+
+.projectsNew .detailIconsVisible {
+  color: lightgray;
+  border: 1px solid rgb(112, 112, 112);
+  opacity: 0.5;
+  font-size: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+
+}
+.projectsNew .detailIconDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.projectsNew .detailIcons {
+  color: lightgray;
+  border: 1px solid rgb(112, 112, 112);
+  opacity: 0;
+  font-size: 10px;
+  margin-right: 20px;
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+  transform: translateY(90%);
+}
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -935,5 +993,19 @@ nav.navbar img{
     height: 200px;
     overflow: hidden;
   }
+  
+.projectsNew .detailIconsVisible {
+
+  font-size: 8px;
+}
+.projectsNew .detailIcons {
+  font-size: 3px;
+}
+
+.projectsNew .detailIconDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 }
