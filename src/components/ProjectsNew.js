@@ -85,10 +85,60 @@ export const ProjectsNew = () => {
           </Col>
           <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
             <Row>
+              <h6>Gymate</h6>
+            </Row>
+            <a
+              href="https://gymate-iota.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <div class="imageContainer">
+                <img src={n29} className="img1NewProject" />
+              </div>
+            </a>
+            <div className="detailIconDiv">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{ textDecoration: "none" }}
+                    href="https://gymate-iota.vercel.app/"
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    style={{ textDecoration: "none" }}
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://car-rental-ten.vercel.app/"
+                    target="_blank"
+                  >
+                    <RiExternalLinkFill
+                      style={{ marginRight: "5px", fontSize: "15px" }}
+                    />{" "}
+                    PREVIEW
+                  </a>
+                )}
+              </TrackVisibility>
+            </div>
+          </Col>
+          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
+            <Row>
               <h6>Minimalist</h6>
             </Row>
 
-            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+            <a
+              href="https://minimalist-e-commerce.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <div class="imageContainer">
                 <img src={n22} className="img1NewProject" />
               </div>
@@ -99,7 +149,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href=""
+                    href="https://minimalist-e-commerce.vercel.app/"
                     target="_blank"
                   >
                     <FaGithub
@@ -126,13 +176,19 @@ export const ProjectsNew = () => {
               </TrackVisibility>
             </div>
           </Col>
+
           <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
             <Row>
-              <h6>Gymate</h6>
+              <h6>My Bags</h6>
             </Row>
-            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+
+            <a
+              href="https://my-bags-ecommerce.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <div class="imageContainer">
-                <img src={n29} className="img1NewProject" />
+                <img src={n26} className="img1NewProject" />
               </div>
             </a>
             <div className="detailIconDiv">
@@ -141,7 +197,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href=""
+                    href="https://my-bags-ecommerce.vercel.app/"
                     target="_blank"
                   >
                     <FaGithub
@@ -173,7 +229,11 @@ export const ProjectsNew = () => {
               <h6>Hoo Bank</h6>
             </Row>
 
-            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+            <a
+              href="https://bank-app-hoo.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <div class="imageContainer">
                 <img src={n25} className="img1NewProject" />
               </div>
@@ -184,51 +244,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href=""
-                    target="_blank"
-                  >
-                    <FaGithub
-                      style={{ marginRight: "5px", fontSize: "15px" }}
-                    />{" "}
-                    GITHUB
-                  </a>
-                )}
-              </TrackVisibility>
-              <TrackVisibility>
-                {({ isVisible }) => (
-                  <a
-                    style={{ textDecoration: "none" }}
-                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    href="https://car-rental-ten.vercel.app/"
-                    target="_blank"
-                  >
-                    <RiExternalLinkFill
-                      style={{ marginRight: "5px", fontSize: "15px" }}
-                    />{" "}
-                    PREVIEW
-                  </a>
-                )}
-              </TrackVisibility>
-            </div>
-          </Col>
-
-          <Col xs={6} sm={6} md={4} xl={4} className=" divImage">
-            <Row>
-              <h6>My Bags</h6>
-            </Row>
-
-            <a href="" target="_blank" style={{ textDecoration: "none" }}>
-              <div class="imageContainer">
-                <img src={n26} className="img1NewProject" />
-              </div>
-            </a>
-            <div className="detailIconDiv">
-              <TrackVisibility>
-                {({ isVisible }) => (
-                  <a
-                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    style={{ textDecoration: "none" }}
-                    href=""
+                    href="https://bank-app-hoo.vercel.app/"
                     target="_blank"
                   >
                     <FaGithub
@@ -260,7 +276,11 @@ export const ProjectsNew = () => {
               <h6>Red Store</h6>
             </Row>
 
-            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+            <a
+              href="https://red-store-website.web.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <div class="imageContainer">
                 <img src={n27} className="img1NewProject" />
               </div>
@@ -271,7 +291,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href=""
+                    href="https://red-store-website.web.app/"
                     target="_blank"
                   >
                     <FaGithub
@@ -303,7 +323,11 @@ export const ProjectsNew = () => {
               <h6>Chart Analytics</h6>
             </Row>
 
-            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+            <a
+              href="https://charts-analytics-app.vercel.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <div class="imageContainer">
                 <img src={n28} className="img1NewProject" />
               </div>
@@ -314,7 +338,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href=""
+                    href="https://charts-analytics-app.vercel.app/"
                     target="_blank"
                   >
                     <FaGithub
@@ -346,7 +370,11 @@ export const ProjectsNew = () => {
               <h6>REAL STATE</h6>
             </Row>
 
-            <a href="" target="_blank" style={{ textDecoration: "none" }}>
+            <a
+              href="https://real-estate-web.pages.dev/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <div class="imageContainer">
                 <img src={n30} className="img1NewProject" />
               </div>
@@ -357,7 +385,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href=""
+                    href="https://real-estate-web.pages.dev/"
                     target="_blank"
                   >
                     <FaGithub
