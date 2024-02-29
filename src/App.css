@@ -854,11 +854,8 @@ nav.navbar img{
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 50px 0 50px 0;
+ background-color: #000;
 }
 .newsletter-bx {
   background: #FFFFFF;
@@ -921,7 +918,7 @@ nav.navbar img{
   border-radius: 18px;
 }
 .footer img {
-  width: 26%;
+  width: 10%;
 }
 .footer p {
   font-weight: 400;
@@ -942,6 +939,19 @@ nav.navbar img{
 .extraDetail{
   display: inline;
 }
+
+
+@media only screen and (min-width: 1400px) {
+  .banner {
+    /* margin-bottom: 100px; */
+    min-height: 100vh;
+    padding: 300px 0 100px 0;
+    background: rgb(41,0,34);
+    background: linear-gradient(302deg, rgba(41,0,34,1) 39%, rgba(0,72,94,1) 99%);
+  }
+
+}
+
 @media only screen and (max-width: 600px) {
   .sumairverse {
       font-size: 3em !important; /* Adjust font size for smaller screens */

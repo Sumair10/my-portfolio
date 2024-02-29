@@ -39,9 +39,9 @@ export const NavBar = () => {
             <img src={logo} alt="Logo" />
             {/* <p className="logo1">SUMAIRVERSE</p> */}
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
-          </Navbar.Toggle>
+          </Navbar.Toggle> */}
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
