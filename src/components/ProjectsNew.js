@@ -13,6 +13,7 @@ import n26 from "../assets/projects/n26.png";
 import n27 from "../assets/projects/n27.png";
 import n28 from "../assets/projects/n28.png";
 import n29 from "../assets/projects/n29.png";
+import n30 from "../assets/projects/n30.png";
 import {
   FaReact,
   FaHtml5,
@@ -73,7 +74,7 @@ export const ProjectsNew = () => {
           </Col>
           <Col xs={6} sm={6} md={3} xl={3} className=" divImage">
             <div class="imageContainer">
-              <img src={n25} className="img1NewProject" />
+              <img src={n30} className="img1NewProject" />
             </div>
           </Col>
         </Row>
