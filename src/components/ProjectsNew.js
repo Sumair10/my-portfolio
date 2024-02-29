@@ -56,7 +56,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href="https://car-rental-ten.vercel.app/"
+                    href="https://github.com/Sumair10/rental-car"
                     target="_blank"
                   >
                     <FaGithub
@@ -102,7 +102,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href="https://gymate-iota.vercel.app/"
+                    href="https://github.com/Sumair10/Gymtae"
                     target="_blank"
                   >
                     <FaGithub
@@ -117,7 +117,7 @@ export const ProjectsNew = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    href="https://car-rental-ten.vercel.app/"
+                    href="https://gymate-iota.vercel.app/"
                     target="_blank"
                   >
                     <RiExternalLinkFill
@@ -148,8 +148,8 @@ export const ProjectsNew = () => {
                 {({ isVisible }) => (
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    href="https://github.com/Sumair10/e-tech-commerce"
                     style={{ textDecoration: "none" }}
-                    href="https://minimalist-e-commerce.vercel.app/"
                     target="_blank"
                   >
                     <FaGithub
@@ -164,7 +164,7 @@ export const ProjectsNew = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    href=""
+                    href="https://minimalist-e-commerce.vercel.app/"
                     target="_blank"
                   >
                     <RiExternalLinkFill
@@ -197,7 +197,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href="https://my-bags-ecommerce.vercel.app/"
+                    href="https://github.com/Sumair10/ecommerce"
                     target="_blank"
                   >
                     <FaGithub
@@ -212,7 +212,7 @@ export const ProjectsNew = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    href="https://car-rental-ten.vercel.app/"
+                    href="https://my-bags-ecommerce.vercel.app/"
                     target="_blank"
                   >
                     <RiExternalLinkFill
@@ -244,8 +244,8 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href="https://bank-app-hoo.vercel.app/"
                     target="_blank"
+                    href="https://github.com/Sumair10/hoo-bank-app"
                   >
                     <FaGithub
                       style={{ marginRight: "5px", fontSize: "15px" }}
@@ -259,7 +259,7 @@ export const ProjectsNew = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    href="https://car-rental-ten.vercel.app/"
+                    href="https://bank-app-hoo.vercel.app/"
                     target="_blank"
                   >
                     <RiExternalLinkFill
@@ -291,7 +291,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href="https://red-store-website.web.app/"
+                    href="https://github.com/Sumair10/RedStore-website"
                     target="_blank"
                   >
                     <FaGithub
@@ -306,7 +306,7 @@ export const ProjectsNew = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    href="https://car-rental-ten.vercel.app/"
+                    href="https://red-store-website.web.app/"
                     target="_blank"
                   >
                     <RiExternalLinkFill
@@ -338,7 +338,7 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href="https://charts-analytics-app.vercel.app/"
+                    href="https://github.com/Sumair10/Dashboard-Analytics"
                     target="_blank"
                   >
                     <FaGithub
@@ -353,7 +353,7 @@ export const ProjectsNew = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    href="https://car-rental-ten.vercel.app/"
+                    href="https://charts-analytics-app.vercel.app/"
                     target="_blank"
                   >
                     <RiExternalLinkFill
@@ -385,13 +385,11 @@ export const ProjectsNew = () => {
                   <a
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
                     style={{ textDecoration: "none" }}
-                    href="https://real-estate-web.pages.dev/"
-                    target="_blank"
                   >
                     <FaGithub
                       style={{ marginRight: "5px", fontSize: "15px" }}
                     />{" "}
-                    GITHUB
+                    PRIVATE
                   </a>
                 )}
               </TrackVisibility>
@@ -400,7 +398,7 @@ export const ProjectsNew = () => {
                   <a
                     style={{ textDecoration: "none" }}
                     className={isVisible ? "detailIconsVisible" : "detailIcons"}
-                    href="https://car-rental-ten.vercel.app/"
+                    href="https://real-estate-web.pages.dev/"
                     target="_blank"
                   >
                     <RiExternalLinkFill
