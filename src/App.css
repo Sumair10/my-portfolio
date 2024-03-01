@@ -942,8 +942,8 @@ nav.navbar img{
 
 
 @media only screen and (min-width: 1400px) {
+
   .banner {
-    /* margin-bottom: 100px; */
     min-height: 100vh;
     padding: 300px 0 100px 0;
     background: rgb(41,0,34);
