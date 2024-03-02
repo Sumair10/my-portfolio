@@ -89,10 +89,10 @@ export const NavBar = () => {
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
-              <HashLink to="#connect">
-                <button className="vvd">
-                  <span>Let’s Connect</span>
-                </button>
+              <HashLink to="#connect" style={{ textDecoration: "none" }}>
+                <p className="downloadResume" style={{ marginLeft: "10px" }}>
+                  Let’s Connect
+                </p>
               </HashLink>
             </span>
           </Navbar.Collapse>

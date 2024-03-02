@@ -89,6 +89,26 @@ export const Featured = () => {
                   <RiExternalLinkFill className="externalLink" />
                 </h5>
               </a>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{
+                      textDecoration: "none",
+                      marginTop: "5px",
+                      marginBottom: "5px",
+                    }}
+                  >
+                    <FaGithub
+                      style={{
+                        fontSize: "12px",
+                        marginRight: "5px",
+                      }}
+                    />{" "}
+                    PRIVATE
+                  </a>
+                )}
+              </TrackVisibility>
               <p class="desc" style={{ fontSize: "15px" }}>
                 FormOle is a cutting-edge, AI-based app that helps you practice
                 your form and technique in fundamental Soccer skills, such as a
@@ -252,6 +272,26 @@ export const Featured = () => {
                   />
                 </h5>
               </a>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{
+                      textDecoration: "none",
+                      marginTop: "5px",
+                      marginBottom: "5px",
+                    }}
+                  >
+                    <FaGithub
+                      style={{
+                        fontSize: "12px",
+                        marginRight: "5px",
+                      }}
+                    />{" "}
+                    PRIVATE
+                  </a>
+                )}
+              </TrackVisibility>
               <p
                 class="desc"
                 style={{ fontSize: "15px", textAlign: "center !important" }}
@@ -456,6 +496,26 @@ export const Featured = () => {
                   <RiExternalLinkFill className="externalLink" />
                 </h5>
               </a>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{
+                      textDecoration: "none",
+                      marginTop: "5px",
+                      marginBottom: "5px",
+                    }}
+                  >
+                    <FaGithub
+                      style={{
+                        fontSize: "12px",
+                        marginRight: "5px",
+                      }}
+                    />{" "}
+                    PRIVATE
+                  </a>
+                )}
+              </TrackVisibility>
               <p class="desc" style={{ fontSize: "15px" }}>
                 The app addresses the challenges faced by companies in labeling
                 their massive amount of data and offering users a chance to
@@ -613,6 +673,28 @@ export const Featured = () => {
                   <RiExternalLinkFill className="externalLink" />
                 </h5>
               </a>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <a
+                    className={isVisible ? "detailIconsVisible" : "detailIcons"}
+                    style={{
+                      textDecoration: "none",
+                      marginTop: "5px",
+                      marginBottom: "5px",
+                    }}
+                    href="https://github.com/Sumair10/movie-app"
+                    target="_blank"
+                  >
+                    <FaGithub
+                      style={{
+                        fontSize: "12px",
+                        marginRight: "5px",
+                      }}
+                    />{" "}
+                    GITHUB
+                  </a>
+                )}
+              </TrackVisibility>
               <p class="desc" style={{ fontSize: "15px" }}>
                 Discover a universe of cinematic wonders with our
                 trailer-focused movie app. Dive into a collection where every
