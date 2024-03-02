@@ -17,10 +17,12 @@ import {
   FaNodeJs,
   FaGithub,
   FaApple,
+  FaBootstrap,
+  FaJira,
 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { DiMongodb } from "react-icons/di";
-import { SiNestjs } from "react-icons/si";
+import { SiNestjs, SiRedux, SiExpress } from "react-icons/si";
 import { BsAndroid2 } from "react-icons/bs";
 import { RiExternalLinkFill } from "react-icons/ri";
 
@@ -230,7 +232,6 @@ export const Featured = () => {
               {({ isVisible }) => (
                 <div>
                   <img src={n17} className="img2" />
-                  {/* <img src={n2} className="img2" /> */}
                 </div>
               )}
             </TrackVisibility>
@@ -272,7 +273,77 @@ export const Featured = () => {
                         isVisible ? "detailIconsVisible" : "detailIcons"
                       }
                     >
-                      <FaReact style={{ marginRight: "5px" }} /> REACTNATIVE
+                      <FaReact style={{ marginRight: "5px" }} /> REACT
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <SiRedux style={{ marginRight: "5px" }} /> REDUX
+                    </p>
+                  )}
+                </TrackVisibility>
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaBootstrap style={{ marginRight: "5px" }} /> BOOTSTRAP
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaJira style={{ marginRight: "5px" }} /> JIRA
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <FaNodeJs act style={{ marginRight: "5px" }} /> NODEJS
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <SiExpress style={{ marginRight: "5px" }} /> EXPRESS
+                    </p>
+                  )}
+                </TrackVisibility>
+
+                <TrackVisibility>
+                  {({ isVisible }) => (
+                    <p
+                      className={
+                        isVisible ? "detailIconsVisible" : "detailIcons"
+                      }
+                    >
+                      <IoLogoFirebase style={{ marginRight: "5px" }} /> FIREBASE
                     </p>
                   )}
                 </TrackVisibility>
@@ -353,28 +424,6 @@ export const Featured = () => {
                       }
                     >
                       <SiNestjs style={{ marginRight: "5px" }} /> NESTJS
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <BsAndroid2 style={{ marginRight: "5px" }} /> ANDROID
-                    </p>
-                  )}
-                </TrackVisibility>
-                <TrackVisibility>
-                  {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <FaApple style={{ marginRight: "5px" }} /> IOS
                     </p>
                   )}
                 </TrackVisibility>

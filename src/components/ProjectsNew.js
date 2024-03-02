@@ -28,7 +28,7 @@ import { SiNestjs } from "react-icons/si";
 import { BsAndroid2 } from "react-icons/bs";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { MdOutlinePreview } from "react-icons/md";
-
+import { LazyLoadedImage } from "./LazyLoadImage";
 export const ProjectsNew = () => {
   return (
     <section className="projectsNew">
@@ -47,7 +47,8 @@ export const ProjectsNew = () => {
               style={{ textDecoration: "none" }}
             >
               <div class="imageContainer">
-                <img src={n20} className="img1NewProject" />
+                {/* <img src={n20} className="img1NewProject" /> */}
+                <LazyLoadedImage src={n20} alt="Description" />
               </div>
             </a>
             <div className="detailIconDiv">
@@ -93,7 +94,8 @@ export const ProjectsNew = () => {
               style={{ textDecoration: "none" }}
             >
               <div class="imageContainer">
-                <img src={n29} className="img1NewProject" />
+                {/* <img src={n29} className="img1NewProject" /> */}
+                <LazyLoadedImage src={n29} alt="Description" />
               </div>
             </a>
             <div className="detailIconDiv">
@@ -140,7 +142,8 @@ export const ProjectsNew = () => {
               style={{ textDecoration: "none" }}
             >
               <div class="imageContainer">
-                <img src={n22} className="img1NewProject" />
+                {/* <img src={n22} className="img1NewProject" /> */}
+                <LazyLoadedImage src={n22} alt="Description" />
               </div>
             </a>
             <div className="detailIconDiv">
@@ -188,7 +191,8 @@ export const ProjectsNew = () => {
               style={{ textDecoration: "none" }}
             >
               <div class="imageContainer">
-                <img src={n26} className="img1NewProject" />
+                {/* <img src={n26} className="img1NewProject" /> */}
+                <LazyLoadedImage src={n26} alt="Description" />
               </div>
             </a>
             <div className="detailIconDiv">
@@ -235,7 +239,8 @@ export const ProjectsNew = () => {
               style={{ textDecoration: "none" }}
             >
               <div class="imageContainer">
-                <img src={n25} className="img1NewProject" />
+                {/* <img src={n25} className="img1NewProject" /> */}
+                <LazyLoadedImage src={n25} alt="Description" />
               </div>
             </a>
             <div className="detailIconDiv">
@@ -282,7 +287,8 @@ export const ProjectsNew = () => {
               style={{ textDecoration: "none" }}
             >
               <div class="imageContainer">
-                <img src={n27} className="img1NewProject" />
+                {/* <img src={n27} className="img1NewProject" /> */}
+                <LazyLoadedImage src={n27} alt="Description" />
               </div>
             </a>
             <div className="detailIconDiv">
@@ -329,7 +335,8 @@ export const ProjectsNew = () => {
               style={{ textDecoration: "none" }}
             >
               <div class="imageContainer">
-                <img src={n28} className="img1NewProject" />
+                {/* <img src={n28} className="img1NewProject" /> */}
+                <LazyLoadedImage src={n28} alt="Description" />
               </div>
             </a>
             <div className="detailIconDiv">
@@ -376,7 +383,8 @@ export const ProjectsNew = () => {
               style={{ textDecoration: "none" }}
             >
               <div class="imageContainer">
-                <img src={n30} className="img1NewProject" />
+                {/* <img src={n30} className="img1NewProject" /> */}
+                <LazyLoadedImage src={n30} alt="Description" />
               </div>
             </a>
             <div className="detailIconDiv">
