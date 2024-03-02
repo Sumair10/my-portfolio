@@ -5,15 +5,14 @@ import { ArrowRightCircle, Windows } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-import n20 from "../assets/projects/n20.png";
-import n22 from "../assets/projects/n22.png";
-import n23 from "../assets/projects/n23.png";
-import n25 from "../assets/projects/n25.png";
-import n26 from "../assets/projects/n26.png";
-import n27 from "../assets/projects/n27.png";
-import n28 from "../assets/projects/n28.png";
-import n29 from "../assets/projects/n29.png";
-import n30 from "../assets/projects/n30.png";
+import n20 from "../assets/projects/n20-min.png";
+import n22 from "../assets/projects/n22-min.png";
+import n25 from "../assets/projects/n25-min.png";
+import n26 from "../assets/projects/n26-min.png";
+import n27 from "../assets/projects/n27-min.png";
+import n28 from "../assets/projects/n28-min.png";
+import n29 from "../assets/projects/n29-min.png";
+import n30 from "../assets/projects/n30-min.png";
 import {
   FaReact,
   FaHtml5,
