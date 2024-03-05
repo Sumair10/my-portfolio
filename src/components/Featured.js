@@ -717,14 +717,14 @@ export const Featured = () => {
 
                 <TrackVisibility>
                   {({ isVisible }) => (
-                    <p
-                      className={
-                        isVisible ? "detailIconsVisible" : "detailIcons"
-                      }
-                    >
-                      <IoLogoJavascript style={{ marginRight: "5px" }} />{" "}
-                      JAVASCRIPT
-                    </p>
+                    // <p
+                    //   className={
+                    //     isVisible ? "detailIconsVisible" : "detailIcons"
+                    //   }
+                    // >
+                    //   <IoLogoJavascript style={{ marginRight: "5px" }} />{" "}
+                    //   JAVASCRIPT
+                    // </p>
                   )}
                 </TrackVisibility>
 
