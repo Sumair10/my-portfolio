@@ -19,7 +19,7 @@ function App() {
       <Skills />
       <Featured />
       <Experience />
-      <ProjectsNew />
+      {/* <ProjectsNew /> */}
       {/* <Projects /> */}
       {/* <Contact /> */}
       <Footer />
